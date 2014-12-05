@@ -28,7 +28,7 @@ with(sData, plot(sData$DateTime,  as.numeric(as.character(sData$Global_active_po
 with(sData, plot(sData$DateTime,  as.numeric(as.character(sData$Sub_metering_1)), type = "l", ylab = "Energy sub metering", xlab = ""))
 points(sData$DateTime,  as.numeric(as.character(sData$Sub_metering_2)), type = "l", col = "red")
 points(sData$DateTime,  sData$Sub_metering_3, type = "l", col = "blue")
-legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = 1, bty="n")
+legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = 1, bty="n", cex=0.95)
 
 ## plot the Voltage
 with(sData, plot(sData$DateTime,  as.numeric(as.character(sData$Voltage)), type = "l", ylab = "Voltage", xlab = "datetime"))
