@@ -18,7 +18,7 @@ sData<-sData[order(sData$DateTime),]
 ## open a png device with the right width and height (those are the defaults, do it anyway)
 png(filename = "plot2.png", width = 480, height = 480)
 
-## plot the line chart 
+## plot the Global Active Power
 with(sData, plot(sData$DateTime,  as.numeric(as.character(sData$Global_active_power)), type = "l", ylab = "Global Active Power (kilowatts)", xlab = ""))
 
 ## close the png device
